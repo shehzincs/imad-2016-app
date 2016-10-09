@@ -1,6 +1,6 @@
 console.log('Loaded!');
 //change the txt
-var element = document.getElmenyById('text');
+var element = document.getElmentById('text');
 element.innerHTML="new value";
 
 //move the image 
