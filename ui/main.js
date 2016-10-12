@@ -1,11 +1,7 @@
 console.log('Loaded!');
 
 //counter
-var counter=0;
-app.get('/counter' , function count() {
-    counter=counter+1;
-    res.send(counter.toString())
-});
+
 //move the image 
 var marginLeft=0;
 function moveright() {
