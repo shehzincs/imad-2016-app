@@ -1,7 +1,4 @@
 console.log('Loaded!');
-//change the txt
-var element = document.getElementById('text');
-element.innerHTML="new value";
 
 //counter
 var counter=0;
