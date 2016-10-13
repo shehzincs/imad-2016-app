@@ -2,7 +2,7 @@ console.log('Loaded!');
 
 //counter
 
-//move the image 
+/*move the image 
 var marginLeft=0;
 function moveright() {
     marginLeft=marginLeft+5;
@@ -13,9 +13,10 @@ img.onclick = function(){
     //img.style.marginLeft= '1000px';
     var interval=setInterval(moveright,50);
 };
-
+*/
 var button = document.getElementById('counter');
 button.onclick = function () {
+  //create a request object
   var request = new HTMLhttprequest();
   request.onreadystatechange = function(){
     if(request.readystate==HTMLhttprequest.DONE) {
@@ -26,4 +27,7 @@ button.onclick = function () {
         }
     } 
   };
+  //make a request
+  request.open('GET','http://shehzincs.imad.hasura-app.io/counter',true);
+  request.send(null);
 };
