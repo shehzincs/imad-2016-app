@@ -33,14 +33,14 @@ button.onclick = function () {
 };
 
 var nameinput =document.getElementById("name");
-var name1 = nameinput.value;
+var name = nameinput.value;
 var submit = document.getElementById("submitbtn");
 submit.onclick= function(){
   
   var names=["name1","name2","name3"];
   var list='';
   for (var i=0;i<names.length;i++){
-      list =='<li>'+name1[i]+'</li>';
+      list =='<li>'+name[i]+'</li>';
   }
   var ul= document.getElementById('namelist');
   ul.innerHTML=list;
